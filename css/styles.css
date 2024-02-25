@@ -494,6 +494,7 @@
             border-radius: 50%;
             border: 1px solid rgba(0, 0, 0, 0.1);
             background-color: #e7e9fc;
+            cursor: pointer;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         
@@ -501,20 +502,23 @@
         .modal-button-close:focus {
             background-color: #404bbf;
             border: none;
-            fill: #fff;
+            fill: #ffffff;
         }
         
         .modal-icon-close {
             fill: #2e2f42;
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
+        /*  
         .modal-button-close:hover .modal-icon-close,
         .modal-button-close:focus .modal-icon-close {
-            fill: #fff;
+             fill: #ffffff;
+            background-color: #404bbf;
+            border: none;
         }
+        */
         
-        .modal__title {
+        .modal-title {
             color: #2e2f42;
             font-weight: 500;
             font-size: 16px;
@@ -557,10 +561,6 @@
         .modal-input:focus {
             border-color: #4D5AE5;
         }
-        /* 
-        .modal-input:focus+.modal-icon {
-            fill: ;
-        }*/
         
         .modal-icon {
             fill: #2e2f42;
@@ -569,6 +569,10 @@
             top: 50%;
             transform: translateY(-50%);
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .modal-icon :focus {
+            fill: #4D5AE5;
         }
         
         .modal-text-field-wrapper {
@@ -631,6 +635,12 @@
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         
+        .modal-check-box:checked {
+            background-color: #404bbf;
+            border: none;
+            fill: #F4F4FD;
+        }
+        
         .modal-link-text {
             margin-left: 4px;
             color: #4D5AE5;
@@ -689,7 +699,7 @@
         .footer-subscribe-input {
             font-weight: 400;
             font-size: 12px;
-            line-height: 1.5;
+            line-height: 2;
             letter-spacing: 0.04em;
             color: #fff;
             background-color: transparent;
@@ -699,7 +709,7 @@
             padding-left: 16px;
             border-radius: 4px;
             border: 1px solid #fff;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             outline: none;
         }
         
