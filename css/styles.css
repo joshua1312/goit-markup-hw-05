@@ -607,13 +607,12 @@
         .addition-check-wrapper {
             margin-bottom: 24px;
         }
-        
-        .addition-check-input:checked+.addition-check-text .addition-check-box {
-            /**/
+        /* .addition-check-input:checked+.addition-check-text .addition-check-box {
+            
             background-color: #404bbf;
             border: none;
             fill: #f4f4fd;
-        }
+        }*/
         
         .addition-check-text {
             color: #8e8f99;
