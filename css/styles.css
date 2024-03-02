@@ -556,7 +556,7 @@
         }
         
         .addition-icon {
-            /* fill: #2e2f42;*/
+            fill: #2e2f42;
             position: absolute;
             left: 16px;
             top: 50%;
@@ -588,6 +588,15 @@
             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         
+        .Text_input {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.16667;
+            letter-spacing: 0.04em;
+            color: rgba(46, 47, 66, 0.4);
+        }
+        
         .addition-text-field:focus {
             border-color: #4D5AE5;
         }
@@ -595,12 +604,6 @@
         .addition-check-wrapper {
             margin-bottom: 24px;
         }
-        /* .addition-check-input:checked+.addition-check-text .addition-check-box {
-            
-            background-color: #404bbf;
-            border: none;
-            fill: #f4f4fd;
-        }*/
         
         .addition-check-text {
             color: #8e8f99;
@@ -619,7 +622,7 @@
             align-items: center;
             justify-content: center;
             fill: transparent;
-            /* margin-right: 8px;*/
+            margin-right: 8px;
         }
         
         .addition-check-input:checked+.addition-check-text .addition-check-box {
@@ -655,11 +658,12 @@
             border: none;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             margin: 0 auto;
+            border-radius: 4px;
             /*  padding: 16px 32px;
             
             
             text-align: center;  
-            border-radius: 4px;
+           
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
             */
         }
@@ -670,7 +674,7 @@
         }
         
         .footer-subscribe-wrapper {
-            margin-left: 80px;
+            margin-left: auto;
         }
         
         .footer-subscribe-text {
@@ -700,7 +704,12 @@
             border-radius: 4px;
             border: 1px solid #fff;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            outline: none;
+            outline: auto;
+        }
+        
+        .footer-subscribe-input:hover,
+        .footer-subscribe-input:focus {
+            outline-color: #31d0aa;
         }
         
         .footer-subscribe-input::placeholder {
